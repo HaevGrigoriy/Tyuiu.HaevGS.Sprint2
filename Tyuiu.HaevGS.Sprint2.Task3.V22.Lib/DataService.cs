@@ -10,13 +10,13 @@ namespace Tyuiu.HaevGS.Sprint2.Task3.V22.Lib
 
             if (x > 1)
             {
-                return x + Math.Pow(x + 3 / x - 1, 2);
+                return x + Math.Pow((x + 3) / (x - 1), x);
             }
             else
             {
                 if (x == 0)
-                {
-                    return x * x - Math.Cos(x*x) + 10 / x * x - Math.Sin(x*x) + 12;
+                {   
+                    return (x * x - Math.Cos(x*x) + 10) / (x * x - Math.Sin(x*x) + 12);
                 }
                 else
                 {
@@ -33,12 +33,8 @@ namespace Tyuiu.HaevGS.Sprint2.Task3.V22.Lib
                     }
                 }
 
-
             }
-
             return Math.Round(y, 3);
-
-
         }
     }
 }
