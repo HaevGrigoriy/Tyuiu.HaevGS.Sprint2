@@ -34,7 +34,7 @@ namespace Tyuiu.HaevGS.Sprint2.Task3.V22.Lib
                 }
 
             }
-        return Math.Round(y, 3);
+            return Math.Round(x, 3);
         }
     }
 }
