@@ -10,40 +10,40 @@ namespace Tyuiu.HaevGS.Sprint2.Task5.V2.Lib
             switch (value)
             {
                 case 1:
-                    res = "Январь";
+                    res = "Зима";
                     break;
                 case 2:
-                    res = "Февраль";
+                    res = "Зима";
                     break;
                 case 3:
-                    res = "Март";
+                    res = "Весна";
                     break;
                 case 4:
-                    res = "Апрель";
+                    res = "Весна";
                     break;
                 case 5:
-                    res = "Май";
+                    res = "Весна";
                     break;
                 case 6:
-                    res = "Июнь";
+                    res = "Лето";
                     break;
                 case 7:
-                    res = "Июль";
+                    res = "Лето";
                     break;
                 case 8:
-                    res = "Август";
+                    res = "Лето";
                     break;
                 case 9:
-                    res = "Сентябрь";
+                    res = "Осень";
                     break;
                 case 10:
-                    res = "Октябрь";
+                    res = "Осень";
                     break;
                 case 11:
-                    res = "Ноябрь";
+                    res = "Осень";
                     break;
                 case 12:
-                    res = "Декабрь";
+                    res = "Осень";
                     break;
 
                 default:
