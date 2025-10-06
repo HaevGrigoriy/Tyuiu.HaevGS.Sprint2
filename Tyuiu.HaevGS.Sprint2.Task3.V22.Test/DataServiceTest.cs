@@ -6,7 +6,7 @@ namespace Tyuiu.HaevGS.Sprint2.Task3.V22.Test
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void ValidCindition()
+        public void ValidCondition()
         {
             DataService ds = new DataService();
             double x = 1;
@@ -16,18 +16,18 @@ namespace Tyuiu.HaevGS.Sprint2.Task3.V22.Test
         }
 
         [TestMethod]
-        public void ValidCindition1()
+        public void ValidCondition1()
         {
             DataService ds = new DataService();
-            double x = 0;
+            double x = 10;
             double res = ds.Calculate(x);
-            double wait = 0.333;
+            double wait = 49.537;
             Assert.AreEqual(wait, res);
         }
 
 
         [TestMethod]
-        public void ValidCindition2()
+        public void ValidCondition2()
         {
             DataService ds = new DataService();
             double x = -2;
@@ -37,7 +37,7 @@ namespace Tyuiu.HaevGS.Sprint2.Task3.V22.Test
         }
 
         [TestMethod]
-        public void ValidCindition3()
+        public void ValidCondition3()
         {
             DataService ds = new DataService();
             double x = -6;
