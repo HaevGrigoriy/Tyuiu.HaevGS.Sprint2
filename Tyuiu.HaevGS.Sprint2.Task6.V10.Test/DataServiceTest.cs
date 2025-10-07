@@ -6,7 +6,7 @@ namespace Tyuiu.HaevGS.Sprint2.Task6.V10.Test
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void ValidFindMonthSeason()
+        public void ValidFindDateOfPreviousDay()
         {
             DataService ds = new DataService();
 
