@@ -25,5 +25,5 @@ int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
-Console.WriteLine(ds.FindDateOfPreviousDay(g, m, "0" + n));
+Console.WriteLine(ds.FindDateOfPreviousDay(g, m, n));
 Console.ReadKey();
