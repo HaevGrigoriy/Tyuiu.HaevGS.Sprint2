@@ -1,14 +1,13 @@
 ﻿using Tyuiu.HaevGS.Sprint2.Task6.V10.Lib;
 
-
 DataService ds = new DataService();
-Console.Title = "Спринт#2 | Выполнил: Шунанов К. Е. | ПКТб-23-2";
+Console.Title = "Спринт#2 | Выполнил: Хаев Г.С. | ПКТб-26-1";
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* Спринт #2                                                               *");
 Console.WriteLine("* Тема: Получение результата из switch                                    *");
 Console.WriteLine("* Задание #6                                                              *");
 Console.WriteLine("* Вариант #10                                                             *");
-Console.WriteLine("* Выполнил: Шунанов Кирилл Ерболатович | ПКТб-23-2                        *");
+Console.WriteLine("* Выполнил: Хаев Григорий Сергеевич    | ПКТб-25-1                        *");
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* УСЛОВИЕ:                                                                *");
 Console.WriteLine("* Дата некоторого дня характеризуется тремя натуральными числами: g (год),*");
@@ -26,5 +25,5 @@ int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
-Console.WriteLine(ds.FindDateOfPreviousDay(g, m, n));
+Console.WriteLine(ds.FindDateOfPreviousDay(g, m, "0" + n));
 Console.ReadKey();

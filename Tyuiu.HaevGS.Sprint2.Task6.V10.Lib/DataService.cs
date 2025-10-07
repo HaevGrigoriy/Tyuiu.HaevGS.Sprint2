@@ -5,7 +5,7 @@ namespace Tyuiu.HaevGS.Sprint2.Task6.V10.Lib
     public class DataService : ISprint2Task6V10
     {
         public string FindDateOfPreviousDay(int g, int m, int n)
-        {
+        {   
             {
                 switch (n)
                 {
@@ -20,7 +20,7 @@ namespace Tyuiu.HaevGS.Sprint2.Task6.V10.Lib
                             case 9:
                             case 11: return "31." + Convert.ToString(m - 1) + '.' + Convert.ToString(g);
                             case 3: return "28.2." + Convert.ToString(g);
-                            default: return "30." + Convert.ToString(m - 1) + '.' + Convert.ToString(g);
+                            default: return "30." + Convert.ToString(m - 1) + '.' + "0" + Convert.ToString(g);
                         }
 
                     default: return Convert.ToString(n - 1) + '.' + Convert.ToString(m) + '.' + Convert.ToString(g);
