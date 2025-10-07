@@ -2,25 +2,29 @@
 
 namespace Tyuiu.HaevGS.Sprint2.Task6.V10.Lib
 {
-    public class DataService : ISprint2Task5V10
+    public class DataService : ISprint2Task6V10
     {
         public string FindDateOfPreviousDay(int g, int m, int n)
         {
-            switch (m)
             {
-                case 1: return "Январь";
-                case 2: return "Февраль";
-                case 3: return "Март";
-                case 4: return "Апрель";
-                case 5: return "Май";
-                case 6: return "Июнь";
-                case 7: return "Июль";
-                case 8: return "Август";
-                case 9: return "Сентябрь";
-                case 10: return "Октябрь";
-                case 11: return "Ноябрь";
-                case 12: return "Декабрь";
-                default: throw new ArgumentException($"Нету такого {m}");
+                switch (n)
+                {
+                    case 1:
+                        switch (m)
+                        {
+                            case 1: return "31.12." + Convert.ToString(g - 1);
+                            case 2:
+                            case 4:
+                            case 6:
+                            case 8:
+                            case 9:
+                            case 11: return "31." + Convert.ToString(m - 1) + '.' + Convert.ToString(g);
+                            case 3: return "28.2." + Convert.ToString(g);
+                            default: return "30." + Convert.ToString(m - 1) + '.' + Convert.ToString(g);
+                        }
+
+                    default: return Convert.ToString(n - 1) + '.' + Convert.ToString(m) + '.' + Convert.ToString(g);
+                }
             }
         }
     }
