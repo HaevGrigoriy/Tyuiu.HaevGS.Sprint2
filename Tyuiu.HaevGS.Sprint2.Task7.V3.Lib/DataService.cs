@@ -9,11 +9,11 @@ namespace Tyuiu.HaevGS.Sprint2.Task7.V3.Lib
             bool res;
             if ((x * x + Math.Pow(y - 1, 2) == 1 && y == 1 - x * x))
             {
-                res = true;
+                res = false;
             }
             else
             {
-                res = false;
+                res = true;
             }
             return res;
         }
