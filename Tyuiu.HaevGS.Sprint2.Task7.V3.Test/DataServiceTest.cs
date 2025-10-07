@@ -10,7 +10,7 @@ namespace Tyuiu.HaevGS.Sprint2.Task7.V3.Test
         {
             DataService ds = new DataService();
 
-            double x = 0.7;
+            double x = 0.5;
             double y = 0.5;
 
             bool res = ds.CheckDotInShadedArea(x, y);
